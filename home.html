@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere Volume Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FEECCF;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #87CEEB;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .calculator input[type="number"] {
+            width: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .calculator button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .calculator button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <img src='imagebrownies/bluesphera.jpg' height="400px" width="400px"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <div class="calculator">
+        <h1>Sphere Volume Calculator</h1>
+        <strong>Formula : </strong><br>
+        <center>V = 4/3 × π × r³</center>
+        <p>Enter the radius of the sphere :</p>
+        <input type="number" id="radius" placeholder="Example : 4">
+        <button onclick="calculateVolume()">Calculate Volume</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateVolume() {
+            const radius = document.getElementById('radius').value;
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.padding = '10px';
+            resultDiv.style.borderRadius = '4px';
+
+            if (radius) {
+                const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+                resultDiv.innerHTML = `<strong>Volume:</strong> ${volume.toFixed(2)} cubic units`;
+                resultDiv.style.backgroundColor = '#6495ED';
+                resultDiv.style.color = '#FFFAF0';
+                resultDiv.style.border = '1px solid #c3e6cb';
+            } else {
+                resultDiv.innerText = 'Please enter a valid radius.';
+                resultDiv.style.backgroundColor = '#0000FF';
+                resultDiv.style.color = '#3399FF';
+                resultDiv.style.border = '1px solid #f5c6cb';
+            }
+        }
+    </script>
+</body>
+</html>

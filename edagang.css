@@ -1,0 +1,243 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    background-color: #49310e;
+}
+
+header {
+    background-color: #eae8f0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo-img {
+    height: 50px; /* Adjust the height as per your preference */
+    margin-right: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e42424;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #e7e6e6;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #22e643;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+.featured-products {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product {
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.product p {
+    margin-bottom: 1rem;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: 
+    #09e051;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #2980b9;
+}
+
+.about-us {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #b68847;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.contact ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact ul li a {
+    color: #3498db;
+}
+
+.chatbot {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Adjust as needed */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f2f2f2;
+}
+
+.chat-box {
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bot-message {
+    background-color: #3498db;
+    color: white;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #f39c12;
+    color: white;
+    align-self: flex-end;
+}
+
+#user-input {
+    margin-top: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+}
+
+#send-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
