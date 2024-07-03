@@ -6,9 +6,11 @@
 }
 
 body {
+
     font-family: 'Times New Roman', Times, serif, sans-serif;
     line-height: 1.6;
-    background-color: #49310e;
+    background-image: url(imagebrownies/backbrownies2.jpg);
+    z-index: 13;
 }
 
 header {
@@ -42,25 +44,38 @@ nav ul li a {
     font-weight: bold;
 }
 
+
+/* Hero section styles */
 .hero {
-    background-image: url('hero.jpg');
+     
     background-size: cover;
     background-position: center;
-    color: #e7e6e6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 5rem 0;
+    color: #fff;
+    position: relative; /* Ensure position is relative for overlay content */
+}
+
+.hero-content {
+    z-index: 1; /* Ensure content is above background image */
+    max-width: 600px;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    color: #d3d3db;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: #f0f0ef;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
-
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -86,6 +101,7 @@ nav ul li a {
 }
 
 .product {
+    color: #09e051;
     margin-bottom: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -96,9 +112,9 @@ nav ul li a {
 }
 
 .product img {
-    width: 70%;
-    max-width: 200px;
-    height: auto;
+    width: 400%;
+    max-width: 400px;
+    height: 400px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -109,12 +125,16 @@ nav ul li a {
 }
 
 .product h3 {
+    color: #09e051;
     margin-top: 1.5rem;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 .product p {
+    color: #22e643;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .product-button {
@@ -126,6 +146,7 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .product-button:hover {
@@ -135,7 +156,7 @@ nav ul li a {
 .about-us {
     padding: 4rem 0;
     text-align: center;
-    background-color: #b68847;
+    background-color: #dfd8d0;
 }
 
 .about-us h2 {
@@ -144,77 +165,34 @@ nav ul li a {
 }
 
 .contact {
+    color: #09e051;
     padding: 4rem 0;
     text-align: center;
 }
 
 .contact h2 {
+    color: #09e051;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 .contact ul {
+    color: #09e051;
     list-style-type: none;
     padding: 0;
     margin-bottom: 1rem;
 }
-
+.contact p {
+    color: #1cee62;
+    font-size: 2.5rem;
+}
 .contact ul li {
+    color: #22e643;
     margin-bottom: 0.5rem;
 }
 
 .contact ul li a {
-    color: #3498db;
-}
-
-.chatbot {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    margin-top: 3rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.chat-container {
-    display: flex;
-    flex-direction: column;
-    height: 400px; /* Adjust as needed */
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #ccc #f2f2f2;
-}
-
-.chat-box {
-    overflow-y: auto;
-}
-
-.chat-message {
-    margin-bottom: 1rem;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.bot-message {
-    background-color: #3498db;
-    color: white;
-    align-self: flex-start;
-}
-
-.user-message {
-    background-color: #f39c12;
-    color: white;
-    align-self: flex-end;
-}
-
-#user-input {
-    margin-top: 1rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: calc(100% - 80px);
+    color: #34db7f;
 }
 
 #send-btn {
