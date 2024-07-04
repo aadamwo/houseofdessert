@@ -79,14 +79,14 @@ nav ul li a {
 
 .hero h1 {
     color: #d3d3db;
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .hero p {
     color: #f0f0ef;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .cta-button {
     display: inline-block;
@@ -113,8 +113,8 @@ nav ul li a {
 }
 
 .product {
-    color: #09e051;
-    margin-bottom: 3rem;
+    color: #e6e6e6;
+    margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -137,15 +137,16 @@ nav ul li a {
 }
 
 .product h3 {
-    color: #09e051;
+    color: #e7eeea;
     margin-top: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .product p {
-    color: #22e643;
-    margin-bottom: 1rem;
+    color: #d9e9dc;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -177,34 +178,34 @@ nav ul li a {
 }
 
 .contact {
-    color: #09e051;
+    color: #dce9e0;
     padding: 4rem 0;
     text-align: center;
 }
 
 .contact h2 {
-    color: #09e051;
+    color: #cacecb;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 .contact ul {
-    color: #09e051;
+    color: #b7c2ba;
     list-style-type: none;
     padding: 0;
     margin-bottom: 1rem;
 }
 .contact p {
-    color: #1cee62;
+    color: #b9bebb;
     font-size: 2.5rem;
 }
 .contact ul li {
-    color: #22e643;
+    color: #c3cfc5;
     margin-bottom: 0.5rem;
 }
 
 .contact ul li a {
-    color: #34db7f;
+    color: #cad1cd;
 }
 
 #send-btn {
