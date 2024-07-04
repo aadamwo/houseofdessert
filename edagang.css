@@ -9,8 +9,22 @@ body {
 
     font-family: 'Times New Roman', Times, serif, sans-serif;
     line-height: 1.6;
-    background-image: url(cafeback.jpg);
+    background-image: url(imagebrownies/cafeback.jpg);
     z-index: 13;
+}
+
+.background-container {
+    
+    width: 100%; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-image: url('imagebrownies//cafeback.jpg'); /* Replace with your image path */
+
+    background-position: center;
+    background-size: cover;
+
+    /* Other optional styles */
+    background-repeat: no-repeat;
+    border: 1px solid #ccc; /* Example border */
 }
 
 header {
